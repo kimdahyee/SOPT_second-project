@@ -31,6 +31,9 @@ class HomeFragment : Fragment() {
         //recyclerView의 어댑터를 instaAdapter로 지정
         loadDatas()
         //데이터를 임의로 생성하고 어댑터에 전달해주겠습니다!
+
+        val itemDecoration = InstaItemDecoration(0)
+        rv_home.addItemDecoration(itemDecoration)
     }
 
     private fun loadDatas() {
