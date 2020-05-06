@@ -6,7 +6,7 @@ import android.util.TypedValue
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
-class InstaItemDecoration (context : Context, padding : Int = 30): RecyclerView.ItemDecoration() {
+class InstaItemDecoration (context : Context, padding : Int = 20): RecyclerView.ItemDecoration() {
 
     private val padding_size : Int
 
