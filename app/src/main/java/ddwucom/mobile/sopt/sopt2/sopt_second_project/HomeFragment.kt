@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -14,6 +16,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment() {
 
     lateinit var instaAdapter: InstaAdapter
+    lateinit var layoutManager: LinearLayoutManager
     val datas : MutableList<InstaData> = mutableListOf<InstaData>()
 
     override fun onCreateView(
@@ -26,14 +29,19 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initRcv(view)
+        loadDatas()
+        //데이터를 임의로 생성하고 어댑터에 전달해주겠습니다!
+    }
+
+    private fun initRcv(view : View) {
         instaAdapter = InstaAdapter(view.context)
         rv_home.adapter = instaAdapter
         //recyclerView의 어댑터를 instaAdapter로 지정
-        loadDatas()
-        //데이터를 임의로 생성하고 어댑터에 전달해주겠습니다!
-
-        val itemDecoration = InstaItemDecoration(0)
-        rv_home.addItemDecoration(itemDecoration)
+        rv_home.apply {
+            layoutManager = LinearLayoutManager(view.context)
+            addItemDecoration(InstaItemDecoration(view.context))
+        }
     }
 
     private fun loadDatas() {
