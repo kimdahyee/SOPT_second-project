@@ -7,7 +7,7 @@ SOPT 2차 세미나 과제
 
 **실습 결과**
 
-![진짜1 (1)](https://user-images.githubusercontent.com/63586451/81278778-18dcc280-9091-11ea-887d-a4333f08037f.png)
+<img width="200" src="https://user-images.githubusercontent.com/63586451/81278778-18dcc280-9091-11ea-887d-a4333f08037f.png">
 
 ![진짜1 (2)](https://user-images.githubusercontent.com/63586451/81278841-3447cd80-9091-11ea-956e-f337f8b45d6b.png)
 
