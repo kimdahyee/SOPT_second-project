@@ -32,9 +32,7 @@ SOPT 2차 세미나 과제
 : itemDecoration를 통해 item 사이의 간격을 설정 할 수 있다.
 
 **clipToPadding**
-: top 혹은 bottom에 padding을 주었을 경우
-`android:clipToPadding="false" `를 해줘야 scroll 할 때 
-패딩이 있어도 아이템이 가려지지 않는다.
+: top 혹은 bottom에 padding을 주었을 경우 `android:clipToPadding="false" `를 해줘야 scroll 할 때 패딩이 있어도 아이템이 가려지지 않는다.
 
 
 <p float="left">
