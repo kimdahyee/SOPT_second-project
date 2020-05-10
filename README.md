@@ -33,8 +33,7 @@ SOPT 2차 세미나 과제
 
 **clipToPadding**
 : top 혹은 bottom에 padding을 주었을 경우
-`android:clipToPadding="false" `를 해줘야 scroll하면서 
-설정한 padding 부분이 사라지지 않는다.
+`android:clipToPadding="false" `를 해줘야 scroll 할 때 패딩이 있어도 아이템이 가려지지 않는다.
 
 <p float="left">
   
