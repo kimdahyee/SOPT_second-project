@@ -314,7 +314,8 @@ SOPT 2차 세미나 과제
 **RecyclerView**
 : RecyclerView는 사용자가 관리하는 많은 수의 데이터 집합을 개별 item 단위로 구성하여 화면에 출력하는 ViewGroup이며, 한 화면에 표시되기 힘든 많은 수의 데이터를 scroll이 가능한 list로 표시해주는 위젯
 
-	***동일한 형태를 가진 뷰 !! 틀은 같고 그 자리에 들어가는 데이터만 다르다***
+
+***동일한 형태를 가진 뷰 !! 틀은 같고 그 자리에 들어가는 데이터만 다르다***
 
 1.  반복될 View 하나 생성 
 	- Layout - new - layout resource file 선택해서 새로운 layout file 생성
